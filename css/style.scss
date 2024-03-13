@@ -1,0 +1,113 @@
+@import "./mixin";
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Noto Sans KR";
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.visual {
+  min-height: 70vh;
+}
+// 데스크탑
+@include desktop {
+  .visual {
+    background-color: pink;
+  }
+
+  .section {
+  }
+
+  .footer {
+  }
+}
+
+// 노트북에서 데스크탑
+@include desktopToLaptop {
+  .visual {
+    background: hotpink;
+  }
+
+  .section {
+  }
+
+  .footer {
+  }
+}
+
+// 노트북
+@include laptop {
+  .visual {
+    background: red;
+  }
+
+  .section {
+  }
+
+  .footer {
+  }
+}
+
+// 태블릿에서 노트북
+@include laptopToTablet {
+  .visual {
+  }
+
+  .section {
+  }
+
+  .footer {
+  }
+}
+
+// 태블릿
+@include tablet {
+  .visual {
+  }
+
+  .section {
+  }
+
+  .footer {
+  }
+}
+
+// 모바일에서 태블릿
+@include tabletToMobile {
+  .visual {
+  }
+
+  .section {
+  }
+
+  .footer {
+  }
+}
+
+// 모바일
+@include mobile {
+  .visual {
+  }
+
+  .section {
+  }
+
+  .footer {
+  }
+}

@@ -1,0 +1,43 @@
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Noto Sans KR";
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.visual {
+  min-height: 70vh;
+}
+
+@media (min-width: 1800px) {
+  .visual {
+    background-color: pink;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1799px) {
+  .visual {
+    background: hotpink;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1499px) {
+  .visual {
+    background: red;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
